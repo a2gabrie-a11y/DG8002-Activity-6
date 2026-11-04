@@ -8,7 +8,7 @@
 
 /* ----- Whole page ----- */
 body {
-  font-family: 'IM Fell English', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   background-color: #15120F;
   color: #EDE3CF;
   font-size: 18px;
@@ -18,6 +18,7 @@ body {
 
 /* ----- Headings ----- */
 h1, h2, h3 {
+  font-family: 'IM Fell English', Georgia, serif;
   color: #D4A84B;
   font-weight: normal;
 }
@@ -53,7 +54,10 @@ a:hover {
   font-style: italic;
   font-size: 1.2rem;
 }
-
+/* ----- Lighter highlight ----- */
+.light {
+  color: #F2D58A;
+}
 /* ----- Flexbox: navigation bar (Act III page) ----- */
 nav {
   display: flex;
@@ -180,6 +184,7 @@ main {
   border-radius: 8px;
   text-decoration: none;
   font-size: 1.2rem;
+  display: inline-block;
 }
 
 .button:hover {
@@ -233,7 +238,7 @@ main {
   .card {
     padding: 12px;
   }
-  
+
 /* ----- Smooth scrolling for the Acts I & II button ----- */
 html {
   scroll-behavior: smooth;
