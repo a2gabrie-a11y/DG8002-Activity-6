@@ -65,3 +65,19 @@ nav {
 nav a {
   text-decoration: none;
 }
+/* ----- Flexbox: image gallery ----- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  flex: 1;
+  min-width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #D4A84B;
+  border-radius: 10px;
+}
