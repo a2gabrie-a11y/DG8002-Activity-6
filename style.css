@@ -13,6 +13,7 @@ body {
   color: #EDE3CF;
   font-size: 18px;
   line-height: 1.6;
+  margin: 0;
 }
 
 /* ----- Headings ----- */
@@ -30,12 +31,12 @@ a:hover {
   color: #D4A84B;
   text-decoration: none;
 }
+
 /* ----- ID selector: the big title ----- */
 #site-title {
   font-size: 3rem;
   text-align: center;
 }
-/* ...your palette comment, body, headings, links... */
 
 /* ----- Class: card ----- */
 .card {
@@ -45,13 +46,15 @@ a:hover {
   padding: 20px;
   margin: 20px 0;
 }
+
 /* ----- Class: highlight ----- */
 .highlight {
   color: #D4A84B;
   font-style: italic;
   font-size: 1.2rem;
 }
-/* ----- Flexbox: navigation bar ----- */
+
+/* ----- Flexbox: navigation bar (Act III page) ----- */
 nav {
   display: flex;
   justify-content: center;
@@ -65,6 +68,7 @@ nav {
 nav a {
   text-decoration: none;
 }
+
 /* ----- Flexbox: image gallery ----- */
 .gallery {
   display: flex;
@@ -80,4 +84,157 @@ nav a {
   object-fit: cover;
   border: 2px solid #D4A84B;
   border-radius: 10px;
+}
+
+/* ----- Flexible page width ----- */
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== OPENING SCENE (top of Act I page) ===== */
+
+/* The whole backdrop: stage photo with a dark-to-velvet wash */
+.opening-scene {
+  background-image:
+    linear-gradient(rgba(21, 18, 15, 0.75), rgba(92, 26, 27, 0.6)),
+    url("images/stage.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5%;
+  border-bottom: 3px solid #D4A84B;
+}
+
+/* Nav inside the scene: logo left, links right */
+.scene-nav {
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #D4A84B;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* Two columns: text left, image right */
+.scene-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+..scene-text {
+  flex: 1;
+  text-align: center;
+}
+
+.scene-text #site-title {
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #EDE3CF;
+  margin: 0 0 30px;
+}
+
+.scene-image {
+  width: 280px;
+  max-width: 30%;
+  height: auto;
+  border: 2px solid #D4A84B;
+  border-radius: 10px;
+  margin-left: auto;
+  transform: translateY(-40px);
+  margin-left: auto;
+  transform: translateY(-40px);
+  }
+
+
+/* ----- Buttons ----- */
+.scene-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: left-align; 
+}
+
+.button {
+  padding: 12px 28px;
+  border: 2px solid #D4A84B;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  background-color: #D4A84B;
+  color: #15120F;
+}
+
+
+/* ----- Responsive: phones and small screens (keep this last) ----- */
+@media (max-width: 600px) {
+
+  #site-title {
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+    .scene-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .scene-text,
+  .scene-text #site-title {
+    text-align: center;         
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;         
+  }
+
+  .scene-buttons {
+    justify-content: center;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 12px;
+  }
+  
+/* ----- Smooth scrolling for the Acts I & II button ----- */
+html {
+  scroll-behavior: smooth;
 }
