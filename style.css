@@ -1,0 +1,32 @@
+/* ===== THEATRE NIGHT PALETTE =====
+   Stage black  #15120F  (page background)
+   Candlelight  #EDE3CF  (body text)
+   Gilt gold    #D4A84B  (headings)
+   Velvet red   #5C1A1B  (accents)
+   Pale gold    #F2D58A  (links)
+*/
+
+/* ----- Whole page ----- */
+body {
+  font-family: 'IM Fell English', Georgia, serif;
+  background-color: #15120F;
+  color: #EDE3CF;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ----- Headings ----- */
+h1, h2, h3 {
+  color: #D4A84B;
+  font-weight: normal;
+}
+
+/* ----- Links ----- */
+a {
+  color: #F2D58A;
+}
+
+a:hover {
+  color: #D4A84B;
+  text-decoration: none;
+}
