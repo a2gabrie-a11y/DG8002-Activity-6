@@ -30,3 +30,38 @@ a:hover {
   color: #D4A84B;
   text-decoration: none;
 }
+/* ----- ID selector: the big title ----- */
+#site-title {
+  font-size: 3rem;
+  text-align: center;
+}
+/* ...your palette comment, body, headings, links... */
+
+/* ----- Class: card ----- */
+.card {
+  background-color: #241E19;
+  border: 2px solid #D4A84B;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+/* ----- Class: highlight ----- */
+.highlight {
+  color: #D4A84B;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+/* ----- Flexbox: navigation bar ----- */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #5C1A1B;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+}
+
+nav a {
+  text-decoration: none;
+}
