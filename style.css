@@ -245,6 +245,27 @@ body.light .opening-scene {
 body.light .tagline {
   color: #3B2A1A;
 }
+/* ----- Greeting box ----- */
+#name-input {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1rem;
+  padding: 10px 14px;
+  background-color: #15120F;
+  color: #EDE3CF;
+  border: 2px solid #D4A84B;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+#greet-error {
+  color: #E24B4A;
+}
+
+body.light #name-input {
+  background-color: #FFF9EC;
+  color: #3B2A1A;
+  border-color: #B89B6A;
+}
 
 /* ----- Responsive: phones and small screens (keep this last) ----- */
 @media (max-width: 600px) {

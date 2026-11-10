@@ -30,3 +30,22 @@ if (factBtn) {
     factText.textContent = facts[index];
   });
 }
+// ----- Feature 3: Personalized greeting (Act I page) -----
+const greetBtn = document.getElementById("greet-btn");
+const nameInput = document.getElementById("name-input");
+const greetText = document.getElementById("greet-text");
+const greetError = document.getElementById("greet-error");
+
+if (greetBtn) {
+  greetBtn.addEventListener("click", function () {
+    const name = nameInput.value.trim();
+
+    if (name === "") {
+      greetError.textContent = "Please enter your name first.";
+      greetText.textContent = "";
+    } else {
+      greetError.textContent = "";
+      greetText.textContent = "Welcome to the theatre, " + name + "!";
+    }
+  });
+}
