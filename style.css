@@ -191,7 +191,60 @@ main {
   background-color: #D4A84B;
   color: #15120F;
 }
+/* ----- Theme button (a real <button>, so it needs its own basics) ----- */
+button.button {
+  background-color: transparent;
+  color: #F2D58A;
+  font-family: 'IM Fell English', Georgia, serif;
+  cursor: pointer;
+}
 
+/* ===== LIGHT THEME: Parchment & Ink (switched on by script.js) ===== */
+body.light {
+  background-color: #F4ECD8;
+  color: #3B2A1A;
+}
+
+body.light h1,
+body.light h2,
+body.light h3,
+body.light a,
+body.light .highlight {
+  color: #7A1F1F;
+}
+
+body.light .card {
+  background-color: #FFF9EC;
+  border-color: #B89B6A;
+}
+
+body.light .button {
+  color: #7A1F1F;
+  border-color: #7A1F1F;
+}
+
+body.light .button:hover {
+  background-color: #7A1F1F;
+  color: #F4ECD8;
+}
+
+body.light nav {
+  background-color: #E8DCC0;
+}
+
+body.light .scene-nav {
+  background-color: transparent;
+}
+
+body.light .opening-scene {
+  background-image:
+    linear-gradient(rgba(244, 236, 216, 0.85), rgba(232, 220, 192, 0.8)),
+    url("images/stage.png");
+}
+
+body.light .tagline {
+  color: #3B2A1A;
+}
 
 /* ----- Responsive: phones and small screens (keep this last) ----- */
 @media (max-width: 600px) {
